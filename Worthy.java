@@ -16,6 +16,7 @@ public class Worthy extends Application{
         //Set Title
         primaryStage.setTitle("Worthy");
 
+
         //Beginning dialog
         Label messageLabel1 = new Label("Hey...it's not ideal to go outside.");
         Label question = new Label("Will you still...go outside?");
@@ -45,6 +46,7 @@ public class Worthy extends Application{
         Scene scene = new Scene(vbox, 300, 200); 
         primaryStage.setScene(scene);
         primaryStage.show();
+
         //Conditional - IF YES
             yesButton.setOnAction(event ->{
              System.out.println("Yes Clicked");
@@ -64,6 +66,63 @@ public class Worthy extends Application{
                 continueButton.setVisible(false);
                 leftButton.setVisible(true);
                 rightButton.setVisible(true);
+                //CONDITIONAL IF LEFT - ENDING 4
+                leftButton.setOnAction(event30 ->{
+                    System.out.println("Left Clicked");
+                    messageLabel1.setText("You chose the left side...");
+                    rightButton.setVisible(false);
+                    leftButton.setVisible(false);
+                    question.setVisible(false);
+                    continueButton.setVisible(true);
+                    continueButton.setOnAction(event31 ->{
+                        System.out.println("Continue Clicked");
+                        messageLabel1.setText("You walk for hours...eventually it gets dark");
+                        continueButton.setOnAction(event32 ->{
+                            System.out.println("Continue Clicked Again");
+                            messageLabel1.setText("It's dark...the only light is from the moon.");
+                            continueButton.setOnAction(event33 ->{
+                                System.out.println("Continue Clicked");
+                                messageLabel1.setText("Then...you hear it before you see it.");
+                                continueButton.setOnAction(event34 ->{
+                                    System.out.println("Continue Clicked Again");
+                                    messageLabel1.setText("You turn around...and there it is, glaring down at you.");
+                                    continueButton.setOnAction(event35 ->{
+                                        System.out.println("Continue Clicked");
+                                        messageLabel1.setText("'It's your fault'");
+                                        continueButton.setOnAction(event36 ->{
+                                            System.out.println("Continue Clicked Again");
+                                            messageLabel1.setText("No...");
+                                            continueButton.setOnAction(event37 ->{
+                                                System.out.println("Continue Clicked");
+                                                messageLabel1.setText("'It's your fault.'");
+                                                continueButton.setOnAction(event38 -> {
+                                                    System.out.println("Continue Clicked Again");
+                                                    messageLabel1.setText("No!");
+                                                    continueButton.setOnAction(event39 ->{
+                                                        System.out.println("Continue Clicked");
+                                                        messageLabel1.setText("'...'");
+                                                        continueButton.setOnAction(event40 ->{
+                                                            System.out.println("Continue Clicked Again");
+                                                            messageLabel1.setText("...");
+                                                            continueButton.setOnAction(event41 -> {
+                                                                System.out.println("Continue Clicked");
+                                                                messageLabel1.setText("'You are not worthy.'");
+                                                                continueButton.setOnAction(event42 -> {
+                                                                    System.out.println("Continue Clicked Again");
+                                                                    messageLabel1.setText("The End.");
+                                                                });
+                                                            });
+                                                        });
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
                 //CONDITIONAL IF RIGHT - ENDING 1
                 rightButton.setOnAction(event3 ->{
                     System.out.println("Right Clicked");
@@ -119,7 +178,7 @@ public class Worthy extends Application{
                 continueButton.setOnAction(event12 ->{
                     System.out.println("Continue Clicked Again");
                     question.setVisible(true);
-                    question.setText("Will you check it out or hide?");
+                    question.setText("Will you check it out?");
                     continueButton.setVisible(false);
                     noButton.setVisible(true);
                     yesButton.setVisible(true);
@@ -221,9 +280,9 @@ public class Worthy extends Application{
                 });
             });
         });
-    }
+    } 
     
-}
+} 
 
     
 
