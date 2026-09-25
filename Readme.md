@@ -8,7 +8,7 @@ The game is supposed to be kind of uncanny (?) or provide an uneasy feel. The wh
 
 I started this project on September 10th, 2026. 
 
-There are currently three endings and I am currently working on the last one. 
+*All endings have been added. 
 
 I am also working on debugging the other endings and making sure that certain buttons don't randomly pop up during specific scenes. 
 
