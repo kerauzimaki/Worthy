@@ -5,6 +5,8 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.text.Text;
+import javafx.scene.paint.Color;
 public class Worthy extends Application{
     public static void main(String[] args){
 
